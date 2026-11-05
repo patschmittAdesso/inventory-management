@@ -1,0 +1,65 @@
+[
+  {
+    "item_sku": "WDG-001",
+    "unit_cost": 42.5,
+    "current_stock": 180,
+    "lead_time_days": 14,
+    "supplier_name": "Northwind Components"
+  },
+  {
+    "item_sku": "BRG-102",
+    "unit_cost": 68.0,
+    "current_stock": 90,
+    "lead_time_days": 10,
+    "supplier_name": "Contoso Bearings"
+  },
+  {
+    "item_sku": "GSK-203",
+    "unit_cost": 12.75,
+    "current_stock": 250,
+    "lead_time_days": 7,
+    "supplier_name": "Fabrikam Seals"
+  },
+  {
+    "item_sku": "MTR-304",
+    "unit_cost": 385.0,
+    "current_stock": 40,
+    "lead_time_days": 28,
+    "supplier_name": "Tailspin Motors"
+  },
+  {
+    "item_sku": "FLT-405",
+    "unit_cost": 9.8,
+    "current_stock": 400,
+    "lead_time_days": 5,
+    "supplier_name": "Fabrikam Seals"
+  },
+  {
+    "item_sku": "VLV-506",
+    "unit_cost": 54.25,
+    "current_stock": 60,
+    "lead_time_days": 12,
+    "supplier_name": "Contoso Bearings"
+  },
+  {
+    "item_sku": "PSU-501",
+    "unit_cost": 18.99,
+    "current_stock": 420,
+    "lead_time_days": 9,
+    "supplier_name": "Adatum Power"
+  },
+  {
+    "item_sku": "SNR-420",
+    "unit_cost": 89.5,
+    "current_stock": 100,
+    "lead_time_days": 18,
+    "supplier_name": "Northwind Components"
+  },
+  {
+    "item_sku": "CTL-330",
+    "unit_cost": 245.0,
+    "current_stock": 30,
+    "lead_time_days": 21,
+    "supplier_name": "Adatum Power"
+  }
+]

@@ -6,6 +6,7 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '補充発注',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -126,7 +127,49 @@ export default {
       status: 'ステータス',
       expectedDelivery: '予定配達日',
       actualDelivery: '実際の配達日'
+    },
+    submitted: {
+      title: '送信済み注文',
+      empty: '送信済みの補充発注はまだありません。補充発注タブから注文してください。',
+      loadError: '送信済み注文の読み込みに失敗しました',
+      status: '送信済み',
+      leadTime: 'リードタイム',
+      days: '{count}日'
     }
+  },
+
+  // Restocking
+  restocking: {
+    title: '補充発注',
+    description: '予算を設定し、需要予測に基づいて最も必要な品目を補充します',
+    budgetTitle: '利用可能な予算',
+    budgetHint: 'スライダーを動かして補充に使える予算を設定します',
+    loadError: '補充の推奨内容の読み込みに失敗しました',
+    stats: {
+      budget: '予算',
+      selectedCost: '選択中の費用',
+      remainingBudget: '残り予算',
+      longestLeadTime: '最長リードタイム'
+    },
+    recommendedItems: '推奨品目',
+    selectedCount: '{total}件中{selected}件を選択',
+    noItems: 'この予算では推奨できる品目がありません。予算を増やすと推奨が表示されます。',
+    table: {
+      select: '選択',
+      item: '品目',
+      trend: 'トレンド',
+      forecast: '予測需要',
+      stock: '在庫数',
+      quantity: '発注数量',
+      unitCost: '単価',
+      lineTotal: '小計',
+      leadTime: 'リードタイム'
+    },
+    days: '{count}日',
+    placeOrder: '注文する',
+    placingOrder: '注文中...',
+    orderSuccess: '注文 {number} を送信しました。{days}日後（{date}）に納品予定です。',
+    viewOrders: '注文一覧で確認'
   },
 
   // Finance/Spending
@@ -309,6 +352,38 @@ export default {
     english: 'English',
     japanese: '日本語',
     selectLanguage: '言語を選択'
+  },
+
+  // Purchase Order Modal
+  purchaseOrder: {
+    createTitle: '発注書を作成',
+    viewTitle: '発注書の詳細',
+    sku: 'SKU',
+    shortage: '不足数',
+    units: '個',
+    supplierName: '仕入先名',
+    quantity: '数量',
+    unitCost: '単価 (USD)',
+    expectedDeliveryDate: '納品予定日',
+    notes: '備考',
+    notesPlaceholder: '仕入先への備考(任意)',
+    totalCost: '合計金額',
+    status: 'ステータス',
+    createdDate: '作成日',
+    poNumber: '発注番号',
+    submit: '発注書を作成',
+    submitting: '作成中...',
+    loading: '発注書を読み込み中...',
+    loadError: '発注書の読み込みに失敗しました',
+    createError: '発注書の作成に失敗しました',
+    notFound: 'この品目の発注書は見つかりません',
+    noNotes: '備考なし',
+    errors: {
+      supplierRequired: '仕入先名は必須です',
+      quantityInvalid: '数量は1以上の整数で入力してください',
+      unitCostInvalid: '単価は0以上で入力してください',
+      dateRequired: '納品予定日は必須です'
+    }
   },
 
   // Common
