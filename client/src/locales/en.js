@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -126,7 +127,49 @@ export default {
       status: 'Status',
       expectedDelivery: 'Expected Delivery',
       actualDelivery: 'Actual Delivery'
+    },
+    submitted: {
+      title: 'Submitted Orders',
+      empty: 'No restocking orders submitted yet. Place one from the Restocking tab.',
+      loadError: 'Failed to load submitted orders',
+      status: 'Submitted',
+      leadTime: 'Lead Time',
+      days: '{count} days'
     }
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Set a budget and restock the items the demand forecast needs most',
+    budgetTitle: 'Available Budget',
+    budgetHint: 'Drag the slider to set how much you can spend on restocking',
+    loadError: 'Failed to load restocking recommendations',
+    stats: {
+      budget: 'Budget',
+      selectedCost: 'Selected Cost',
+      remainingBudget: 'Remaining Budget',
+      longestLeadTime: 'Longest Lead Time'
+    },
+    recommendedItems: 'Recommended Items',
+    selectedCount: '{selected} of {total} selected',
+    noItems: 'No items can be recommended for this budget. Increase the budget to see recommendations.',
+    table: {
+      select: 'Select',
+      item: 'Item',
+      trend: 'Trend',
+      forecast: 'Forecast Demand',
+      stock: 'In Stock',
+      quantity: 'Order Qty',
+      unitCost: 'Unit Cost',
+      lineTotal: 'Line Total',
+      leadTime: 'Lead Time'
+    },
+    days: '{count} days',
+    placeOrder: 'Place Order',
+    placingOrder: 'Placing Order...',
+    orderSuccess: 'Order {number} submitted. Expected delivery in {days} days ({date}).',
+    viewOrders: 'View in Orders'
   },
 
   // Finance/Spending
@@ -309,6 +352,38 @@ export default {
     english: 'English',
     japanese: 'Japanese',
     selectLanguage: 'Select Language'
+  },
+
+  // Purchase Order Modal
+  purchaseOrder: {
+    createTitle: 'Create Purchase Order',
+    viewTitle: 'Purchase Order Details',
+    sku: 'SKU',
+    shortage: 'Shortage',
+    units: 'units',
+    supplierName: 'Supplier Name',
+    quantity: 'Quantity',
+    unitCost: 'Unit Cost (USD)',
+    expectedDeliveryDate: 'Expected Delivery Date',
+    notes: 'Notes',
+    notesPlaceholder: 'Optional notes for the supplier',
+    totalCost: 'Total Cost',
+    status: 'Status',
+    createdDate: 'Created',
+    poNumber: 'PO Number',
+    submit: 'Create Purchase Order',
+    submitting: 'Creating...',
+    loading: 'Loading purchase order...',
+    loadError: 'Failed to load purchase order',
+    createError: 'Failed to create purchase order',
+    notFound: 'No purchase order found for this item',
+    noNotes: 'No notes',
+    errors: {
+      supplierRequired: 'Supplier name is required',
+      quantityInvalid: 'Quantity must be a whole number greater than 0',
+      unitCostInvalid: 'Unit cost must be 0 or greater',
+      dateRequired: 'Expected delivery date is required'
+    }
   },
 
   // Common

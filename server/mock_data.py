@@ -35,5 +35,13 @@ recent_transactions = load_json_file('transactions.json')
 # Load purchase orders
 purchase_orders = load_json_file('purchase_orders.json')
 
+# Restocking: catalog holds cost/stock/lead time per forecast SKU (not available in inventory.json)
+restock_catalog = load_json_file('restock_catalog.json')
+# Mutated in place by POST /api/restocking/orders; must never be reassigned (main.py holds a reference)
+restock_orders = []
+
+# In-memory tasks created via POST /api/tasks; mutated in place, must never be reassigned (main.py holds a reference)
+tasks = []
+
 # All data is now loaded from JSON files in the data/ directory
 # This allows for easier maintenance and updates of the sample data
